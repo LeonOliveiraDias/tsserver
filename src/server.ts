@@ -11,7 +11,7 @@ function onRequest(
   req: http.IncomingMessage,
   res: http.ServerResponse<http.IncomingMessage> & { req: http.IncomingMessage }
 ): void {
-  var filename = url.parse(String(req.url)).pathname,
+  let filename = url.parse(String(req.url)).pathname,
     fullPath,
     extension: string;
 
